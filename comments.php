@@ -43,7 +43,7 @@ if ( post_password_required() ) {
         </ul>
 
         <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
-            <nav id="comment-nav" class="nav-links" role="navigation">
+            <nav id="comment-nav" class="nav-links">
                 <h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'minium' ); ?></h1>
 
                 <div class="nav-previous">

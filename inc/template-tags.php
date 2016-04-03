@@ -22,7 +22,7 @@ if ( ! function_exists( 'minium_paging_nav' ) ) :
             return;
         }
         ?>
-        <nav class="navigation paging-navigation" role="navigation">
+        <nav class="navigation paging-navigation">
             <div class="nav-links">
 
                 <div
@@ -49,7 +49,7 @@ if ( ! function_exists( 'social_menu' ) ) :
 
         if ( has_nav_menu( 'social' ) ) : ?>
 
-            <nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Social Links Menu', 'minium' ); ?>">
+            <nav class="social-navigation" aria-label="<?php esc_attr_e( 'Social Links Menu', 'minium' ); ?>">
                 <?php
                 wp_nav_menu( array(
                     'theme_location' => 'social',
@@ -146,7 +146,7 @@ if ( ! function_exists( 'minium_post_nav' ) ) :
             return;
         }
         ?>
-        <nav class="navigation post-navigation" role="navigation">
+        <nav class="navigation post-navigation">
             <h1 class="screen-reader-text">
                 <?php _e( 'Post navigation', 'minium' ); ?>
             </h1>

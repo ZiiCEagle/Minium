@@ -10,6 +10,6 @@ if ( ! is_active_sidebar( 'minium-footer' ) ) {
 }
 ?>
 
-<div id="site-supplementary" class="widget-area" role="complementary">
+<div id="site-supplementary" class="widget-area">
     <?php dynamic_sidebar( 'minium-footer' ); ?>
 </div><!-- #site-supplementary -->

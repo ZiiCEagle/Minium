@@ -9,9 +9,9 @@
     <a href="<?php the_permalink(); ?>" class="content-background"></a>
 
     <?php if ( has_category() ) : ?>
-        <span class="cat-links">
+        <div class="cat-links">
             <?php the_category(); ?>
-        </span>
+        </div>
     <?php endif; ?>
 
     <header class="content-header">
