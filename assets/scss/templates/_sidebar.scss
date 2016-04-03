@@ -1,0 +1,34 @@
+.widget-area
+{
+    display: flex;
+
+    padding: 0 $gutter;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    ul
+    {
+        line-height: 1.75;
+
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+
+        a
+        {
+            @include color-link();
+        }
+    }
+}
+
+.widget
+{
+    margin: $gutter;
+}
+
+.widget-title
+{
+    margin-top: 0;
+}

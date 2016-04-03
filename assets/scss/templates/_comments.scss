@@ -1,0 +1,304 @@
+.comments-title
+{
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #eaeeef;
+    .fa
+    {
+        margin-right: $gutter;
+    }
+}
+
+.comments-list
+{
+    padding: 0;
+
+    list-style: none;
+}
+
+.children
+{
+    list-style: none;
+}
+
+.comment-meta
+{
+    img
+    {
+        width: 50px;
+        height: 50px;
+        margin-right: $gutter;
+
+        border-radius: 50%;
+    }
+    a
+    {
+        @include color-link();
+    }
+}
+
+.comment-author
+{
+    font-weight: 600;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.comment-meta-info
+{
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.comment-awaiting-moderation
+{
+    margin-bottom: 0;
+
+    @extend .alert-warning;
+    flex-basis: 100%;
+    &:before
+    {
+        margin-right: $gutter;
+    }
+}
+
+.comment-body
+{
+    position: relative;
+
+    margin-bottom: ($gutter * 2);
+    margin-left: $gutter;
+    padding: $gutter ($gutter * 2);
+
+    border: 2px solid $color-brand-tertiary;
+    border-radius: 8px;
+
+    &:before,
+    &:after
+    {
+        position: absolute;
+        top: 32px;
+        right: 100%;
+
+        width: 0;
+        height: 0;
+        margin-top: -13px;
+
+        content: ' ';
+        pointer-events: none;
+
+        border: solid transparent;
+        border-width: 13px;
+        border-right-color: $color-brand-tertiary;
+    }
+    &:after
+    {
+        margin-top: -10px;
+
+        border-width: 10px;
+        border-color: rgba(255, 255, 255, 0);
+        border-right-color: #fff;
+    }
+}
+
+.comment-content
+{
+    a
+    {
+        @include color-link-reverse();
+    }
+}
+
+.bypostauthor
+{
+    .comment-body
+    {
+        border-color: $color-brand-primary;
+        &:before
+        {
+            border-right-color: $color-brand-primary;
+        }
+    }
+
+    .children
+    {
+        .comment-body
+        {
+            border-color: $color-brand-tertiary;
+            &:before
+            {
+                border-right-color: $color-brand-tertiary;
+            }
+        }
+
+        .bypostauthor
+        {
+            .comment-body
+            {
+                border-color: $color-brand-primary;
+                &:before
+                {
+                    border-right-color: $color-brand-primary;
+                }
+            }
+        }
+    }
+}
+
+.comment-metadata
+{
+    time
+    {
+        font-size: .8em;
+
+        @include color-link()
+        {
+            color: lighten($color-brand-secondary, 20%);
+        }
+    }
+}
+
+.reply
+{
+    text-align: right;
+}
+
+.comment-reply-link
+{
+    @include color-link-reverse();
+
+    .fa
+    {
+        margin-left: $gutter;
+    }
+}
+
+.comment-reply-title
+{
+    small
+    {
+        display: block;
+
+        a
+        {
+            @include color-link();
+        }
+    }
+}
+
+.comment-form
+{
+    a
+    {
+        color: #345;
+    }
+    .logged-in-as
+    {
+        a:last-child
+        {
+            display: block;
+
+            margin-top: $gutter;
+
+            color: rgb(240,71,71);
+        }
+    }
+
+    label
+    {
+        display: block;
+    }
+
+    textarea,
+    input
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-top: $gutter;
+        padding: $gutter;
+
+        transition: all .2s;
+
+        border: 2px solid #e9eeee;
+        border-radius: 5px;
+
+        -webkit-appearance: none;
+        -webkit-tap-highlight-color: transparent;
+
+        &:focus
+        {
+            border-color: #b7c6c9;
+            outline: 0;
+        }
+    }
+}
+
+.form-submit
+{
+    input[type=submit]
+    {
+        margin-top: 0;
+
+        transition: all .2s;
+
+        background-color: #fff;
+        &:hover
+        {
+            color: #fff;
+            border-color: $color-brand-primary;
+            background-color: $color-brand-primary;
+        }
+    }
+}
+
+.comments-closed
+{
+    @extend .alert-warning;
+
+    .fa
+    {
+        margin-right: $gutter;
+    }
+}
+
+@include bp(small)
+{
+    .form-submit
+    {
+        text-align: right;
+        input[type=submit]
+        {
+            width: auto;
+        }
+    }
+
+    .comments-list
+    {
+        .comment
+        {
+            position: relative;
+
+            padding-left: 75px;
+        }
+    }
+
+    .comment-meta
+    {
+        img
+        {
+            position: absolute;
+            left: -75px;
+        }
+    }
+
+    .comment-meta-info
+    {
+        flex-direction: initial;
+    }
+}

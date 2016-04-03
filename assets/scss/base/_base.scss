@@ -1,0 +1,24 @@
+*,
+*:before,
+*:after
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Lato';
+
+    overflow-x: hidden;
+
+    hyphens: auto;
+
+    color: #345;
+
+    overflow-wrap: break-word;
+}
+
+a
+{
+    text-decoration: none;
+}

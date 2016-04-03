@@ -1,0 +1,38 @@
+@mixin bp($breakpoint)
+{
+    @if map-has-key($breakpoints, $breakpoint)
+    {
+        @media screen and (min-width: map-get($breakpoints, $breakpoint))
+        {
+            @content;
+        }
+    }
+}
+
+@mixin color-link()
+{
+    transition: color .1s;
+
+    color: $color-brand-secondary;
+
+    @content;
+
+    &:hover
+    {
+        color: $color-brand-primary;
+    }
+}
+
+@mixin color-link-reverse()
+{
+    transition: color .1s;
+
+    color: $color-brand-primary;
+
+    @content;
+
+    &:hover
+    {
+        color: $color-brand-secondary;
+    }
+}

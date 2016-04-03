@@ -1,0 +1,201 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Minium\n"
+"POT-Creation-Date: 2016-04-02 20:33+0200\n"
+"PO-Revision-Date: 2016-03-13 16:01+0100\n"
+"Last-Translator: \n"
+"Language-Team: Guillaume Briday <guillaumebriday@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr_FR\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: bower_components\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:19
+msgid "It looks like nothing was found at this location. Maybe try to go home or search something ?"
+msgstr ""
+
+#: archive.php:14
+msgid "Last posts by"
+msgstr ""
+
+#: archive.php:16
+msgid "month"
+msgstr ""
+
+#: archive.php:18
+msgid "year"
+msgstr ""
+
+#: archive.php:20
+msgid "category"
+msgstr ""
+
+#: archive.php:22
+msgid "author"
+msgstr ""
+
+#: archive.php:24
+msgid "tag"
+msgstr ""
+
+#: biography.php:10
+msgid "Written by"
+msgstr ""
+
+#: comments.php:26 single.php:30
+msgid "No comments"
+msgstr ""
+
+#: comments.php:26 single.php:30
+msgid "1 comment"
+msgstr ""
+
+#: comments.php:26 single.php:30
+#, php-format
+msgid "% comments"
+msgstr ""
+
+#: comments.php:34
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:47
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:50
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:54
+msgid "Newer Comments"
+msgstr ""
+
+#: footer.php:29
+msgid "Made with"
+msgstr ""
+
+#: footer.php:29
+msgid "by"
+msgstr ""
+
+#: functions.php:38
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:39
+msgid "Social Links Menu"
+msgstr ""
+
+#: functions.php:63
+msgid "Footer"
+msgstr ""
+
+#: functions.php:65
+msgid "Widget area for the footer. If no widgets are provided, this footer will not appear."
+msgstr ""
+
+#: inc/customizer.php:30
+msgid "Main Color"
+msgstr ""
+
+#: inc/extras.php:65
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: inc/template-tags.php:29
+msgid "Older posts"
+msgstr ""
+
+#: inc/template-tags.php:33
+#, php-format
+msgid "Page %1s on %2s"
+msgstr ""
+
+#: inc/template-tags.php:38
+msgid "Newer posts"
+msgstr ""
+
+#: inc/template-tags.php:129
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:136
+msgid "Previous post"
+msgstr ""
+
+#: inc/template-tags.php:145
+msgid "Next post"
+msgstr ""
+
+#: inc/template-tags.php:169
+msgid "Pingback:"
+msgstr ""
+
+#: inc/template-tags.php:169
+msgid "Edit"
+msgstr ""
+
+#: inc/template-tags.php:185 single.php:27
+#, php-format
+msgid "%1s ago"
+msgstr ""
+
+#: inc/template-tags.php:194
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/template-tags.php:210
+msgid "Reply"
+msgstr ""
+
+#: index.php:19
+msgid "Last posts"
+msgstr ""
+
+#: search.php:19
+msgid "Last posts by search"
+msgstr ""
+
+#: searchform.php:10
+msgid "Search"
+msgstr ""
+
+#: templates/content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: templates/content-none.php:19
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: templates/content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: templates/content-none.php:27
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: templates/content-single.php:31
+msgid "Next page"
+msgstr ""
+
+#: templates/content-single.php:32
+msgid "Previous page"
+msgstr ""

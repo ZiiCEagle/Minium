@@ -1,0 +1,32 @@
+{
+  "name": "Minium",
+  "description": "Minimalist theme for Wordpress",
+  "main": "index.js",
+  "authors": [
+    "Guillaume Briday <guillaumebriday@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "minimalist",
+    "theme",
+    "wordpress",
+    "flat",
+    "white",
+    "blue",
+    "responsive"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.5.0",
+    "normalize-css": "^4.0.0"
+  }
+}

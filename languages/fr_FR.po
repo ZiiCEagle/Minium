@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Minium\n"
+"POT-Creation-Date: 2016-04-02 20:33+0200\n"
+"PO-Revision-Date: 2016-04-02 20:34+0200\n"
+"Last-Translator: \n"
+"Language-Team: Guillaume Briday <guillaumebriday@gmail.com>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oups! Cette page est introuvable."
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try to go home or "
+"search something ?"
+msgstr ""
+"Rien n’a été trouvé sur cette page. Essayez de retourner à l’accueil ou de "
+"faire une recherche ?"
+
+#: archive.php:14
+msgid "Last posts by"
+msgstr "Les derniers articles par"
+
+#: archive.php:16
+msgid "month"
+msgstr "mois"
+
+#: archive.php:18
+msgid "year"
+msgstr "ann&eacute;e"
+
+#: archive.php:20
+msgid "category"
+msgstr "cat&eacute;gorie"
+
+#: archive.php:22
+msgid "author"
+msgstr "auteur"
+
+#: archive.php:24
+msgid "tag"
+msgstr "tag"
+
+#: biography.php:10
+msgid "Written by"
+msgstr "&Eacute;crit par"
+
+#: comments.php:26 single.php:30
+msgid "No comments"
+msgstr "Aucun commentaire"
+
+#: comments.php:26 single.php:30
+msgid "1 comment"
+msgstr "1 commentaire"
+
+#: comments.php:26 single.php:30
+#, php-format
+msgid "% comments"
+msgstr "% commentaires"
+
+#: comments.php:34
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés."
+
+#: comments.php:47
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:50
+msgid "Older Comments"
+msgstr "Commentaires récents"
+
+#: comments.php:54
+msgid "Newer Comments"
+msgstr "Anciens commentaires"
+
+#: footer.php:29
+msgid "Made with"
+msgstr "Fait avec"
+
+#: footer.php:29
+msgid "by"
+msgstr "par"
+
+#: functions.php:38
+msgid "Primary Menu"
+msgstr "Menu principal"
+
+#: functions.php:39
+msgid "Social Links Menu"
+msgstr "Menu social"
+
+#: functions.php:63
+msgid "Footer"
+msgstr "Pied de page"
+
+#: functions.php:65
+msgid ""
+"Widget area for the footer. If no widgets are provided, this footer will not "
+"appear."
+msgstr ""
+"Zone de Widget dans le pied de page. Si aucun widget n’est présent, cette "
+"zone sera cachée."
+
+#: inc/customizer.php:30
+msgid "Main Color"
+msgstr "Couleur principale"
+
+#: inc/extras.php:65
+#, php-format
+msgid "Page %s"
+msgstr "Page %s"
+
+#: inc/template-tags.php:29
+msgid "Older posts"
+msgstr "Anciens articles"
+
+#: inc/template-tags.php:33
+#, php-format
+msgid "Page %1s on %2s"
+msgstr "Page %1s sur %2s"
+
+#: inc/template-tags.php:38
+msgid "Newer posts"
+msgstr "Articles récents"
+
+#: inc/template-tags.php:129
+msgid "Post navigation"
+msgstr "Post Navigation"
+
+#: inc/template-tags.php:136
+msgid "Previous post"
+msgstr "Articles pr&eacute;c&eacute;dent"
+
+#: inc/template-tags.php:145
+msgid "Next post"
+msgstr "Article suivant"
+
+#: inc/template-tags.php:169
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: inc/template-tags.php:169
+msgid "Edit"
+msgstr "Editer"
+
+#: inc/template-tags.php:185 single.php:27
+#, php-format
+msgid "%1s ago"
+msgstr "Il y a %1s"
+
+#: inc/template-tags.php:194
+msgid "Your comment is awaiting moderation."
+msgstr "Votre commentaire est en attente de mod&eacute;ration."
+
+#: inc/template-tags.php:210
+msgid "Reply"
+msgstr "Répondre"
+
+#: index.php:19
+msgid "Last posts"
+msgstr "Derniers articles"
+
+#: search.php:19
+msgid "Last posts by search"
+msgstr "Derniers articles par recherche"
+
+#: searchform.php:10
+msgid "Search"
+msgstr "Rechercher"
+
+#: templates/content-none.php:13
+msgid "Nothing Found"
+msgstr "Aucun résultat"
+
+#: templates/content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Prêt à publier votre premier article ? <a href=\"%1$s\">Commencez ici</a>."
+
+#: templates/content-none.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Désolé, mais rien n’a été trouvé avec les termes de cette recherche. "
+"Veuillez essayer une autre recherche."
+
+#: templates/content-none.php:27
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Il semblerait que rien n’a été trouvé pour ce que vous demandez. Il faut "
+"peut être faire une recherche."
+
+#: templates/content-single.php:31
+msgid "Next page"
+msgstr "Page suivante"
+
+#: templates/content-single.php:32
+msgid "Previous page"
+msgstr "Page précédente"
+
+#~ msgid ""
+#~ "It looks like nothing was found at this location. Maybe try one of the "
+#~ "links below or a search?"
+#~ msgstr ""
+#~ "Il ne semble rien avoir sur cette page. Il faut revenir à l’accueil ou "
+#~ "essayer une recherche."

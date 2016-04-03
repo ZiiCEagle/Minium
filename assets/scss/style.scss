@@ -1,0 +1,47 @@
+/*!
+Theme Name: Minium
+Theme URI: https://guillaumebriday.fr
+Author: Guillaume Briday
+Author URI: https://guillaumebriday.fr
+Description: Clean and minimalistic content-oriented responsive theme for faster sites suitable for your personal blog. With its modern look, Minium lets your readers focus on the content. Minium has a very minimal CSS for its layout and responsiveness.
+Version: 1.0.0
+License: Apache License
+License URI: http://www.apache.org/licenses/
+Text Domain: Minium
+Domain Path: /languages/
+Tags: Blue, gray, white, one-column, fluid-layout, responsive-layout, Flexbox
+*/
+
+/* Tools */
+
+@import '../../bower_components/normalize-css/normalize';
+@import 'tools/settings';
+@import 'tools/mixins';
+
+/* Base */
+
+@import 'base/base';
+@import 'base/bootstrap';
+@import 'base/wordpress_core';
+
+/* Fonts */
+
+@import 'fonts/font-awesome';
+
+/* Layouts */
+
+@import 'layouts/navbar';
+@import 'layouts/header';
+@import 'layouts/footer';
+
+/* Templates */
+
+@import 'templates/social';
+@import 'templates/site-content';
+@import 'templates/archive';
+@import 'templates/content';
+@import 'templates/comments';
+@import 'templates/single';
+@import 'templates/biography';
+@import 'templates/navigation';
+@import 'templates/sidebar';

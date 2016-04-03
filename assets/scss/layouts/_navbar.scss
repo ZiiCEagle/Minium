@@ -1,0 +1,67 @@
+.navbar
+{
+    display: flex;
+
+    max-width: 100%;
+    height: $header-height;
+    padding-right: $gutter;
+    padding-left: $gutter;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-form
+{
+    position: relative;
+}
+
+.search-field
+{
+    line-height: 1.75em;
+
+    max-width: 175px;
+    padding-left: 35px;
+
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 999em;
+    box-shadow: none;
+
+    -webkit-appearance: none;
+
+    &:focus
+    {
+        outline: none;
+    }
+}
+
+.submit-field
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    padding-left: 14.5px;
+
+    border: none;
+    background: transparent;
+
+    .fa-search
+    {
+        line-height: 1.75em;
+
+        color: $color-brand-secondary;
+    }
+
+    &:focus
+    {
+        outline: 0;
+    }
+}
+
+.logo
+{
+    @include color-link;
+    flex-basis: 50%;
+}

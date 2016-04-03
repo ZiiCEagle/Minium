@@ -1,0 +1,139 @@
+.nav-links
+{
+    display: flex;
+
+    margin: (3 * $gutter) 0;
+
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+    a
+    {
+        display: inline-flex;
+
+        padding: 5px;
+
+        border: 1px solid transparent;
+
+        align-items: baseline;
+        @include color-link()
+        {
+            transition: all .3s;
+        }
+
+        &:hover
+        {
+            border: 1px solid;
+            border-radius: 3px;
+        }
+    }
+}
+
+.nav-meta
+{
+    color: $color-brand-secondary;
+}
+
+.nav-next,
+.nav-previous,
+.nav-meta
+{
+    flex-basis: 100%;
+
+    span
+    {
+        margin-bottom: $gutter;
+
+        color: $color-brand-secondary;
+    }
+}
+
+.nav-previous
+{
+    .fa
+    {
+        margin-right: 8px;
+    }
+}
+
+.nav-next
+{
+    margin-top: ($gutter * 2);
+
+    text-align: right;
+    .fa
+    {
+        margin-left: 8px;
+    }
+}
+
+.nav-meta
+{
+    margin-top: ($gutter * 2);
+
+    text-align: center;
+}
+
+.meta-nav
+{
+    font-size: .9em;
+
+    display: block;
+
+    margin-bottom: $gutter;
+
+    color: $color-brand-secondary;
+}
+
+.page-links
+{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    a
+    {
+        margin: 0 $gutter;
+        padding: 5px;
+
+        transition: all .3s;
+
+        border: 1px solid transparent;
+        border-radius: 3px;
+
+        @include color-link();
+        &:hover
+        {
+            border-color: $color-brand-primary;
+        }
+    }
+
+    .fa-angle-left
+    {
+        margin-right: 8px;
+    }
+
+    .fa-angle-right
+    {
+        margin-left: 8px;
+    }
+}
+
+@include bp(small)
+{
+    .nav-next,
+    .nav-previous
+    {
+        flex-basis: 50%;
+    }
+
+    .paging-navigation
+    {
+        div
+        {
+            flex-basis: auto;
+        }
+    }
+}

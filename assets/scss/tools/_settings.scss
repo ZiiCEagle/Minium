@@ -1,0 +1,23 @@
+/* Fonts */
+
+$fa-font-path: 'assets/fonts';
+
+/* Breakpoints */
+
+$breakpoints: (
+    xsmall: 584px,
+    small: 767px,
+    medium: 992px,
+    large: 1200px
+);
+
+/* Variables */
+
+$gutter: 10px;
+$header-height: 75px;
+
+/* Colors */
+
+$color-brand-primary: #738bd7;
+$color-brand-secondary: #808080;
+$color-brand-tertiary: #eaeeef;

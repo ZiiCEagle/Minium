@@ -1,0 +1,152 @@
+.post,
+.page
+{
+    position: relative;
+
+    min-height: 300px;
+    margin-bottom: $gutter;
+    padding: 5px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.content-header
+{
+    position: absolute;
+    bottom: 5px;
+    left: $gutter;
+}
+
+.content-meta
+{
+    display: flex;
+    .avatar
+    {
+        width: 40px;
+        height: 40px;
+
+        border-radius: 50%;
+    }
+
+    a
+    {
+        margin-right: $gutter;
+
+        vertical-align: top;
+
+        @include color-link()
+        {
+            color: #fff;
+        }
+    }
+}
+
+.content-summary
+{
+    font-size: .8em;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content-date
+{
+    color: #fff;
+    .fa-comments
+    {
+        margin-right: ($gutter / 2);
+    }
+}
+
+.content-post
+{
+    .cat-links
+    {
+        position: absolute;
+    }
+
+    .post-categories
+    {
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+
+        li
+        {
+            display: inline-block;
+
+            margin: ($gutter / 2);
+
+            background-color: #000;
+            a
+            {
+                display: block;
+
+                padding: 10px;
+
+                @include color-link()
+                {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.content-title
+{
+    margin-top: 0;
+    a
+    {
+        @include color-link()
+        {
+            display: block;
+
+            color: #fff;
+        }
+    }
+
+    .fa-bookmark
+    {
+        font-size: 16px;
+
+        margin-right: ($gutter / 2);
+
+        vertical-align: middle;
+    }
+}
+
+.content-background
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    transition: background-color .2s;
+
+    background-color: rgba(0,0,0,.3);
+
+    &:hover
+    {
+        background-color: rgba(0,0,0,.5);
+    }
+}
+
+.bull
+{
+    font-size: .5em;
+
+    margin: 0 ($gutter / 2);
+
+    vertical-align: middle;
+}
