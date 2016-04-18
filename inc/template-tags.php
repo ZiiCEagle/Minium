@@ -82,48 +82,48 @@ if ( ! function_exists( 'author_social_menu' ) ) :
         <ul class="social-links-menu">
             <?php if ( ! empty( $twitter ) ) : ?>
                 <li class="menu-item">
-                    <a href="https://twitter.com/<?php echo $twitter; ?>"></a>
+                    <a href="https://twitter.com/<?php echo $twitter; ?>" target="_blank"></a>
                 </li>
             <?php endif; ?>
 
             <?php if ( ! empty( $url ) ) : ?>
                 <li class="menu-item">
-                    <a href="<?php echo $url; ?>" class="fa fa-user"></a>
+                    <a href="<?php echo $url; ?>" class="fa fa-user" target="_blank"></a>
                 </li>
             <?php endif; ?>
 
             <?php if ( ! empty( $instagram ) ) : ?>
                 <li class="menu-item">
-                    <a href="https://www.instagram.com/<?php echo $instagram; ?>"></a>
+                    <a href="https://www.instagram.com/<?php echo $instagram; ?>" target="_blank"></a>
                 </li>
             <?php endif; ?>
 
             <?php if ( ! empty( $github ) ) : ?>
                 <li class="menu-item">
-                    <a href="https://github.com/<?php echo $github; ?>"></a>
+                    <a href="https://github.com/<?php echo $github; ?>" target="_blank"></a>
                 </li>
             <?php endif; ?>
 
             <?php if ( strpos( $linkedin, 'linkedin.com' ) !== false ) : ?>
                 <li class="menu-item">
-                    <a href="<?php echo $linkedin; ?>"></a>
+                    <a href="<?php echo $linkedin; ?>" target="_blank"></a>
                 </li>
             <?php endif; ?>
 
             <?php if ( strpos( $facebook, 'facebook.com' ) !== false ) : ?>
                 <li class="menu-item">
-                    <a href="<?php echo $facebook; ?>"></a>
+                    <a href="<?php echo $facebook; ?>" target="_blank"></a>
                 </li>
             <?php endif; ?>
 
             <?php if ( strpos( $googleplus, 'plus.google.com' ) !== false ) : ?>
                 <li class="menu-item">
-                    <a href="<?php echo $googleplus; ?>"></a>
+                    <a href="<?php echo $googleplus; ?>" target="_blank"></a>
                 </li>
             <?php endif; ?>
 
             <li class="menu-item">
-                <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>feed/"></a>
+                <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>feed/" target="_blank"></a>
             </li>
         </ul>
 
