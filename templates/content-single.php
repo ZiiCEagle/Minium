@@ -45,9 +45,6 @@
             </div>
         <?php endif; ?>
 
-        <?php if ( '' !== get_the_author_meta( 'description' ) ) {
-            get_template_part( 'biography' );
-        }
-        ?>
+        <?php get_template_part( 'biography' ); ?>
     </div>
 </article>
