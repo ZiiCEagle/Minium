@@ -5,6 +5,7 @@
         margin: 0 ($gutter / 2);
 
         @extend .fa;
+        @extend .fa-link;
         @include color-link();
     }
 
@@ -117,5 +118,10 @@
     a[href*='plus.google.com']
     {
         @extend .fa-google-plus;
+    }
+
+    a.fa.fa-user
+    {
+        @extend .fa-user;
     }
 }

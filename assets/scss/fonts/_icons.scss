@@ -174,3 +174,7 @@
 {
     content: $fa-var-bookmark;
 }
+.#{$fa-css-prefix}-link:before
+{
+    content: $fa-var-link;
+}
