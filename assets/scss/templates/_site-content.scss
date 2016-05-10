@@ -30,13 +30,8 @@
 
 .site-main
 {
-    display: flex;
-    flex-direction: column;
-
     padding: $gutter;
     padding-top: 0;
-
-    flex-wrap: wrap;
 }
 
 .site-main-meta
