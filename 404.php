@@ -18,6 +18,13 @@ get_header(); ?>
             <div class="page-content">
                 <p><?php _e( 'It looks like nothing was found at this location. Maybe try to go home or search something ?', 'minium' ); ?></p>
             </div><!-- .page-content -->
+
+            <?php if ( is_active_sidebar( 'minium-not-found' ) ) : ?>
+                <div id="site-supplementary" class="widget-area">
+                    <?php dynamic_sidebar( 'minium-not-found' ); ?>
+                </div><!-- #site-supplementary -->
+            <?php endif; ?>
+
         </section><!-- .error-404 -->
 
     </main><!-- #main -->

@@ -68,6 +68,16 @@ function minium_widgets_init() {
         'before_title'  => '<h4 class="widget-title">',
         'after_title'   => '</h4>',
     ) );
+
+    register_sidebar( array(
+        'name'          => __( 'Page not found', 'minium' ),
+        'id'            => 'minium-not-found',
+        'description'   => __( 'Widget area for the page not found. If no widgets are provided, this widget will not appear.', 'minium' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h4 class="widget-title">',
+        'after_title'   => '</h4>',
+    ) );
 }
 add_action( 'widgets_init', 'minium_widgets_init' );
 
