@@ -102,7 +102,7 @@ function minium_scripts() {
 add_action( 'wp_enqueue_scripts', 'minium_scripts' );
 
 function highlight() {
-    if ( is_single() ) :
+    if ( is_singular() ) :
         ?>
         <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
         <?php
