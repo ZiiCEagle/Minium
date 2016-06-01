@@ -34,6 +34,19 @@ function minium_register_theme_customizer( $wp_customize ) {
         )
     );
 
+    $wp_customize->add_setting( 'display_cookies_bar', array(
+        'default'        => true,
+        'transport'  =>  'postMessage'
+     ) );
+
+    $wp_customize->add_control(
+    'display_cookies_bar',
+    array(
+        'section'   => 'title_tagline',
+        'label'     => __( 'Display Cookies bar', 'minium' ),
+        'type'      => 'checkbox'
+         )
+     );
 }
 
 add_action( 'customize_register', 'minium_register_theme_customizer' );
