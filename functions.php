@@ -94,6 +94,7 @@ function minium_scripts() {
         $translation_array = array(
             'cookiebar_content' => __( "This website makes use of cookies to enhance browsing experience and provide additional functionality. None of this data can or will be used to identify or contact you.", 'minium' ),
             'cookiebar_learn_more' => __( "Learn more", 'minium'),
+            'cookiebar_learn_more_link' => get_theme_mod('cookies_bar_learn_more_link'),
             'cookiebar_close' => __( "Close", 'minium')
         );
         wp_localize_script( 'app', 'minium_app', $translation_array );
