@@ -10,6 +10,8 @@ notify = require("gulp-notify")
 rename = require("gulp-rename")
 sass = require('gulp-sass')
 size = require('gulp-size')
+uglify = require('gulp-uglify')
+coffee = require('gulp-coffee')
 
 paths =
   bower: "bower_components/"
@@ -22,6 +24,15 @@ paths =
 browsers = [
   "last 2 versions"
 ]
+
+# Convert CoffeeScript to JavaScript
+gulp.task "coffee", ->
+  gulp.src paths.js + "*.coffee"
+  .pipe coffee()
+  .pipe uglify()
+  .pipe rename
+    suffix: ".min"
+  .pipe gulp.dest paths.js
 
 # Task for styles files
 gulp.task "styles", [ "bower", "csscomb" ], ->
