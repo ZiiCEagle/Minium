@@ -14,26 +14,6 @@ add_theme_support( 'title-tag' );
 
 function minium_register_theme_customizer( $wp_customize ) {
 
-    $wp_customize->add_setting(
-        'minium_main_color',
-        array(
-            'default'   => '#738bd7',
-            'transport' => 'postMessage'
-        )
-    );
-
-    $wp_customize->add_control(
-        new WP_Customize_Color_Control(
-            $wp_customize,
-            'link_color',
-            array(
-                'label'    => __( 'Main Color', 'minium' ),
-                'section'  => 'colors',
-                'settings' => 'minium_main_color'
-            )
-        )
-    );
-
     $wp_customize->add_setting( 'display_cookies_bar', array(
         'default'    => true,
         'transport'  =>  'postMessage'
