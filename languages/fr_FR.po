@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Minium\n"
-"POT-Creation-Date: 2016-04-02 20:33+0200\n"
-"PO-Revision-Date: 2016-04-02 20:34+0200\n"
+"POT-Creation-Date: 2016-06-01 21:32+0200\n"
+"PO-Revision-Date: 2016-06-01 21:32+0200\n"
 "Last-Translator: \n"
 "Language-Team: Guillaume Briday <guillaumebriday@gmail.com>\n"
 "Language: fr_FR\n"
@@ -15,6 +15,8 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: bower_components\n"
 
 #: 404.php:15
 msgid "Oops! That page can&rsquo;t be found."
@@ -113,9 +115,42 @@ msgstr ""
 "Zone de Widget dans le pied de page. Si aucun widget n’est présent, cette "
 "zone sera cachée."
 
+#: functions.php:73
+msgid "Page not found"
+msgstr "Page non trouvée"
+
+#: functions.php:75
+msgid ""
+"Widget area for the page not found. If no widgets are provided, this widget "
+"will not appear."
+msgstr ""
+"Zone de widget dans la page non trouvée. Si aucun widget n'est présent, "
+"cette zone sera cachée."
+
+#: functions.php:95
+msgid ""
+"This website makes use of cookies to enhance browsing experience and provide "
+"additional functionality. None of this data can or will be used to identify "
+"or contact you."
+msgstr ""
+"En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de "
+"cookies pour réaliser des statistiques de visites anonymes."
+
+#: functions.php:96
+msgid "Learn more"
+msgstr "En savoir plus"
+
+#: functions.php:97
+msgid "Close"
+msgstr "J'ai compris"
+
 #: inc/customizer.php:30
 msgid "Main Color"
 msgstr "Couleur principale"
+
+#: inc/customizer.php:46
+msgid "Display Cookies bar"
+msgstr "Afficher la barre des cookies"
 
 #: inc/extras.php:65
 #, php-format
@@ -135,36 +170,36 @@ msgstr "Page %1s sur %2s"
 msgid "Newer posts"
 msgstr "Articles récents"
 
-#: inc/template-tags.php:129
+#: inc/template-tags.php:151
 msgid "Post navigation"
 msgstr "Post Navigation"
 
-#: inc/template-tags.php:136
+#: inc/template-tags.php:158
 msgid "Previous post"
 msgstr "Articles pr&eacute;c&eacute;dent"
 
-#: inc/template-tags.php:145
+#: inc/template-tags.php:167
 msgid "Next post"
 msgstr "Article suivant"
 
-#: inc/template-tags.php:169
+#: inc/template-tags.php:191
 msgid "Pingback:"
 msgstr "Pingback:"
 
-#: inc/template-tags.php:169
+#: inc/template-tags.php:191
 msgid "Edit"
 msgstr "Editer"
 
-#: inc/template-tags.php:185 single.php:27
+#: inc/template-tags.php:207 single.php:27
 #, php-format
 msgid "%1s ago"
 msgstr "Il y a %1s"
 
-#: inc/template-tags.php:194
+#: inc/template-tags.php:216
 msgid "Your comment is awaiting moderation."
 msgstr "Votre commentaire est en attente de mod&eacute;ration."
 
-#: inc/template-tags.php:210
+#: inc/template-tags.php:232
 msgid "Reply"
 msgstr "Répondre"
 
