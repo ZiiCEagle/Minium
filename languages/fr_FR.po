@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Minium\n"
-"POT-Creation-Date: 2016-06-01 21:32+0200\n"
-"PO-Revision-Date: 2016-06-01 21:32+0200\n"
+"POT-Creation-Date: 2016-06-01 23:15+0200\n"
+"PO-Revision-Date: 2016-06-01 23:15+0200\n"
 "Last-Translator: \n"
 "Language-Team: Guillaume Briday <guillaumebriday@gmail.com>\n"
 "Language: fr_FR\n"
@@ -140,7 +140,7 @@ msgstr ""
 msgid "Learn more"
 msgstr "En savoir plus"
 
-#: functions.php:97
+#: functions.php:98
 msgid "Close"
 msgstr "J'ai compris"
 
@@ -151,6 +151,10 @@ msgstr "Couleur principale"
 #: inc/customizer.php:46
 msgid "Display Cookies bar"
 msgstr "Afficher la barre des cookies"
+
+#: inc/customizer.php:55
+msgid "The link for the call to learn more button"
+msgstr "Le lien pour le bouton \"En savoir plus\""
 
 #: inc/extras.php:65
 #, php-format
