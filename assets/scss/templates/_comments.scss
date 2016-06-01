@@ -105,13 +105,28 @@
         border-color: rgba(255, 255, 255, 0);
         border-right-color: #fff;
     }
-}
-
-.comment-content
-{
     a
     {
         @include color-link-reverse();
+    }
+}
+
+.pingback
+{
+    .comment-body
+    {
+        &:before,
+        &:after
+        {
+            top: 50%;
+        }
+    }
+
+    .edit-link
+    {
+        display: block;
+
+        text-align: right;
     }
 }
 
