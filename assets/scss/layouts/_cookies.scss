@@ -1,0 +1,43 @@
+.cookie-bar
+{
+    font-size: 12px;
+    line-height: 1.5;
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    padding: 10px;
+
+    border-top: 1px $color-brand-tertiary solid;
+    background-color: #fff;
+
+    a
+    {
+        margin: 0 ($gutter / 2);
+
+        @include color-link-reverse();
+    }
+
+    button
+    {
+        padding: 2px ($gutter / 2);
+
+        transition: all .2s;
+
+        color: $color-brand-tertiary;
+        border: 1px solid $color-brand-primary;
+        border-radius: 5px;
+        background-color: $color-brand-primary;
+
+        &:hover
+        {
+            cursor: pointer;
+
+            color: $color-brand-primary;
+            border-color: $color-brand-primary;
+            background-color: #fff;
+        }
+    }
+}
