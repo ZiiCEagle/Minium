@@ -62,7 +62,7 @@ function minium_wp_title( $title, $sep ) {
 
     // Add a page number if necessary:
     if ( $paged >= 2 || $page >= 2 ) {
-        $title .= " $sep " . sprintf( __( 'Page %s', 'fastr' ), max( $paged, $page ) );
+        $title .= " $sep " . sprintf( __( 'Page %s', 'minium' ), max( $paged, $page ) );
     }
 
     return $title;
