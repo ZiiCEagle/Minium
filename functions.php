@@ -108,6 +108,7 @@ function minium_scripts() {
     if ( is_singular() ) {
         wp_enqueue_style( 'highlight', "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/railscasts.min.css" );
         wp_enqueue_script( 'highlight', "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js" );
+        wp_enqueue_script( 'highlightLineNumbers', get_template_directory_uri() . '/assets/js/highlightjs-line-numbers.min.js' );
     }
 }
 
@@ -117,6 +118,7 @@ function highlight() {
     if ( is_singular() ) :
         ?>
         <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript">hljs.initLineNumbersOnLoad();</script>
         <?php
     endif;
 }
