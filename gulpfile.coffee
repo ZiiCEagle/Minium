@@ -57,13 +57,6 @@ gulp.task "styles", [ "bower", "csscomb" ], ->
       message: "Done"
   .pipe gulp.dest "./"
 
-gulp.task 'scripts', ['bower'], ->
-  src = [
-    paths.bower + "highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"
-  ]
-  gulp.src src
-  .pipe gulp.dest paths.js
-
 # Browser-sync task to watch modifications and init server
 gulp.task 'browser-sync', ->
   browserSync.init
