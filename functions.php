@@ -106,7 +106,7 @@ function minium_scripts() {
     }
 
     if ( is_singular() ) {
-        wp_enqueue_style( 'highlight', "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/railscasts.min.css" );
+        wp_enqueue_style( 'highlight', "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/tomorrow-night.min.css" );
         wp_enqueue_script( 'highlight', "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js" );
     }
 }
