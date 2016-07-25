@@ -37,7 +37,7 @@
 
             <p><?php the_author_meta( 'description' ); ?></p>
 
-            <?php author_social_menu(); ?>
+            <?php primary_menu(); ?>
 
         <?php elseif ( ! is_single() ) : ?>
 
