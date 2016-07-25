@@ -45,7 +45,7 @@
 
             <p> <?php bloginfo( 'description' ); ?> </p>
 
-            <?php social_menu(); ?>
+            <?php primary_menu(); ?>
 
         <?php endif; ?>
 

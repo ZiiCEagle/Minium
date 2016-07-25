@@ -12,16 +12,7 @@
 
 <footer id="colophon" class="site-footer">
 
-    <?php if ( has_nav_menu( 'primary' ) ) : ?>
-        <nav class="main-navigation" aria-label="<?php esc_attr_e( 'Footer Primary Menu', 'minium' ); ?>">
-            <?php
-            wp_nav_menu( array(
-                'theme_location' => 'primary',
-                'menu_class'     => 'primary-menu',
-            ) );
-            ?>
-        </nav><!-- .main-navigation -->
-    <?php endif; ?>
+    <?php social_menu(); ?>
 
     <?php get_sidebar(); ?>
 
