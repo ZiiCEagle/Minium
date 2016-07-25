@@ -43,6 +43,25 @@ if ( ! function_exists( 'minium_paging_nav' ) ) :
     }
 endif;
 
+if ( ! function_exists( 'primary_menu' ) ) :
+
+    function primary_menu() {
+
+        if ( has_nav_menu( 'primary' ) ) : ?>
+
+            <nav class="main-navigation" aria-label="<?php esc_attr_e( 'Footer Primary Menu', 'minium' ); ?>">
+                <?php
+                    wp_nav_menu( array(
+                        'theme_location' => 'primary',
+                        'menu_class'     => 'primary-menu',
+                    ) );
+                ?>
+            </nav><!-- .main-navigation -->
+
+        <?php endif;
+    }
+endif;
+
 if ( ! function_exists( 'social_menu' ) ) :
 
     function social_menu() {
