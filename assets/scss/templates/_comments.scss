@@ -265,6 +265,8 @@
         background-color: #fff;
         &:hover
         {
+            cursor: pointer;
+
             color: #fff;
             border-color: $color-brand-primary;
             background-color: $color-brand-primary;
