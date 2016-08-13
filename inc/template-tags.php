@@ -24,9 +24,7 @@ if ( ! function_exists( 'minium_paging_nav' ) ) :
         ?>
         <nav class="navigation paging-navigation">
             <div class="nav-links">
-
-                <div
-                    class="nav-previous"><?php next_posts_link( ' <i class="fa fa-angle-left"></i>' . __( 'Older posts', 'minium' ) ); ?></div>
+                <div class="nav-previous"><?php next_posts_link( ' <i class="fa fa-angle-left"></i>' . __( 'Older posts', 'minium' ) ); ?></div>
 
                 <?php if ( $wp_query->max_num_pages > 1 ) : ?>
                     <div class="nav-meta">
@@ -34,9 +32,7 @@ if ( ! function_exists( 'minium_paging_nav' ) ) :
                     </div>
                 <?php endif; ?>
 
-                <div
-                    class="nav-next"><?php previous_posts_link( __( 'Newer posts', 'minium' ) . ' <i class="fa fa-angle-right"></i>' ); ?></div>
-
+                <div class="nav-next"><?php previous_posts_link( __( 'Newer posts', 'minium' ) . ' <i class="fa fa-angle-right"></i>' ); ?></div>
             </div>
         </nav>
         <?php

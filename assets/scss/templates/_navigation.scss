@@ -2,7 +2,7 @@
 {
     display: flex;
 
-    margin: (3 * $gutter) 0;
+    margin: (2 * $gutter) 0;
 
     justify-content: space-between;
     align-items: baseline;
@@ -119,6 +119,11 @@
     {
         margin-left: 8px;
     }
+}
+
+.paging-navigation
+{
+    padding: 0 $gutter;
 }
 
 @include bp(small)
