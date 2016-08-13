@@ -27,7 +27,7 @@ get_header(); ?>
                         <?php printf( __( '%1s ago', 'minium' ), human_time_diff( get_the_time( 'U' ) ) ); ?>
                         <i class="fa fa-circle bull"></i>
                         <a class="site-comments" href="#comments">
-                            <i class="fa fa-comments"></i> <?php comments_number( __( 'No comments', 'minium' ), __( '1 comment', 'minium' ), __( '% comments', 'minium' ) ); ?>
+                            <i class="fa fa-comments"></i><?php comments_number( '0', '1', '%' ); ?>
                         </a>
                     </span>
                 </div>
