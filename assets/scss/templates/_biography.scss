@@ -4,8 +4,6 @@
 
     padding: $gutter 0;
 
-    text-align: center;
-
     align-items: center;
     flex-wrap: wrap;
 }
@@ -58,8 +56,6 @@
 {
     .author-content
     {
-        text-align: left;
-
         flex-wrap: nowrap;
     }
 }

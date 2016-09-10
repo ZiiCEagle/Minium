@@ -59,11 +59,9 @@
 
 .nav-next
 {
+    margin-top: ($gutter * 2);
+
     text-align: right;
-    a
-    {
-        margin-top: ($gutter * 2);
-    }
 
     .fa
     {

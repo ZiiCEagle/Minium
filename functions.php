@@ -85,7 +85,6 @@ add_action( 'widgets_init', 'minium_widgets_init' );
  * Enqueue scripts and styles.
  */
 function minium_scripts() {
-    wp_enqueue_style( 'minium-google-fonts', 'https://fonts.googleapis.com/css?family=Lato:400,700,300,300italic,400italic,700italic', false );
     wp_enqueue_style( 'minium-style', get_stylesheet_uri() );
 
     if ( true === get_theme_mod('display_cookies_bar') ) {
