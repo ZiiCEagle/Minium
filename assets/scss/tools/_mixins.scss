@@ -1,38 +1,29 @@
-@mixin bp($breakpoint)
-{
-    @if map-has-key($breakpoints, $breakpoint)
-    {
-        @media screen and (min-width: map-get($breakpoints, $breakpoint))
-        {
-            @content;
-        }
+@mixin bp($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
     }
+  }
 }
 
-@mixin color-link()
-{
-    transition: color .1s;
+@mixin color-link() {
+  color: $color-brand-secondary;
+  transition: color .1s;
 
-    color: $color-brand-secondary;
+  @content;
 
-    @content;
-
-    &:hover
-    {
-        color: $color-brand-primary;
-    }
-}
-
-@mixin color-link-reverse()
-{
-    transition: color .1s;
-
+  &:hover {
     color: $color-brand-primary;
+  }
+}
 
-    @content;
+@mixin color-link-reverse() {
+  color: $color-brand-primary;
+  transition: color .1s;
 
-    &:hover
-    {
-        color: $color-brand-secondary;
-    }
+  @content;
+
+  &:hover {
+    color: $color-brand-secondary;
+  }
 }

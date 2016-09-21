@@ -1,22 +1,16 @@
-.site-header
-{
-    padding: 0 $gutter;
-
-    text-align: center;
-    img
-    {
-        border-radius: 10%;
-    }
+.site-header {
+  padding: 0 $gutter;
+  text-align: center;
+  img {
+    border-radius: 10%;
+  }
 }
 
-.social-links-menu
-{
-    padding: 0;
+.social-links-menu {
+  padding: 0;
+  list-style: none;
 
-    list-style: none;
-
-    .menu-item
-    {
-        display: inline-block;
-    }
+  .menu-item {
+    display: inline-block;
+  }
 }

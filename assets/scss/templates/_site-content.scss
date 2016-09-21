@@ -1,85 +1,65 @@
-.site-content
-{
-    position: relative;
+.site-content {
+  position: relative;
+  padding-top: $gutter;
 
-    padding-top: $gutter;
+  &:before {
+    position: absolute;
+    top: 0;
+    right: $gutter;
+    left: $gutter;
+    height: 1px;
+    content: '';
+    background-color: $color-brand-secondary;
+  }
 
-    &:before
-    {
-        position: absolute;
-        top: 0;
-        right: $gutter;
-        left: $gutter;
-
-        height: 1px;
-
-        content: '';
-
-        background-color: $color-brand-secondary;
+  .single & {
+    &:before,
+    &:after {
+      content: none;
     }
-
-    .single &
-    {
-        &:before,
-        &:after
-        {
-            content: none;
-        }
-    }
+  }
 }
 
-.site-main
-{
-    padding: 0 $gutter;
+.site-main {
+  padding: 0 $gutter;
 }
 
-.site-main-meta
-{
-    margin-top: (-1 * $gutter / 2);
-    margin-bottom: (2 * $gutter);
-
-    color: $color-brand-secondary;
+.site-main-meta {
+  margin-top: (-1 * $gutter / 2);
+  margin-bottom: (2 * $gutter);
+  color: $color-brand-secondary;
 }
 
-@include bp(medium)
-{
-    .site
-    {
-        width: map-get($breakpoints, medium);
-        margin: 0 auto;
+@include bp(medium) {
+  .site {
+    width: map-get($breakpoints, medium);
+    margin: 0 auto;
+  }
+
+  .row {
+    display: flex;
+
+    justify-content: space-between;
+
+    article {
+      flex-basis: 60%;
+      &:first-child {
+        margin-right: $gutter;
+      }
+
+      &:last-child {
+        flex-basis: 40%;
+      }
     }
 
-    .row
-    {
-        display: flex;
+    &:nth-of-type(odd) {
+      article {
+        flex-basis: 40%;
 
-        justify-content: space-between;
-
-        article
-        {
-            flex-basis: 60%;
-            &:first-child
-            {
-                margin-right: $gutter;
-            }
-
-            &:last-child
-            {
-                flex-basis: 40%;
-            }
+        &:last-child {
+          flex-basis: 60%;
         }
-
-        &:nth-of-type(odd)
-        {
-            article
-            {
-                flex-basis: 40%;
-
-                &:last-child
-                {
-                    flex-basis: 60%;
-                }
-            }
-        }
+      }
     }
+  }
 }

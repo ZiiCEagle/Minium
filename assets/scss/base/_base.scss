@@ -1,20 +1,15 @@
 *,
 *:before,
-*:after
-{
-    box-sizing: border-box;
+*:after {
+  box-sizing: border-box;
 }
 
-body
-{
-    font-family: -apple-system, Sans-Serif;
-
-    overflow-x: hidden;
-
-    color: #345;
+body {
+  overflow-x: hidden;
+  font-family: -apple-system, Sans-Serif;
+  color: #345;
 }
 
-a
-{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }

@@ -1,34 +1,26 @@
-.widget-area
-{
-    display: flex;
+.widget-area {
+  display: flex;
+  padding: 0 $gutter;
 
-    padding: 0 $gutter;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-    flex-wrap: wrap;
-    justify-content: space-between;
+  ul {
+    padding: 0;
+    margin: 0;
+    line-height: 1.75;
+    list-style: none;
 
-    ul
-    {
-        line-height: 1.75;
-
-        margin: 0;
-        padding: 0;
-
-        list-style: none;
-
-        a
-        {
-            @include color-link();
-        }
+    a {
+      @include color-link();
     }
+  }
 }
 
-.widget
-{
-    margin: $gutter;
+.widget {
+  margin: $gutter;
 }
 
-.widget-title
-{
-    margin-top: 0;
+.widget-title {
+  margin-top: 0;
 }
