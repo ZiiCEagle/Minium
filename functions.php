@@ -89,15 +89,15 @@ function minium_scripts() {
 
     if ( true === get_theme_mod('display_cookies_bar') ) {
         wp_enqueue_script( 'js-cookie', '//cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.2/js.cookie.min.js' );
-        wp_register_script( 'app', get_template_directory_uri() . "/assets/js/cookies.min.js" );
+        wp_register_script( 'cookies', get_template_directory_uri() . "/assets/js/cookies.min.js", [], false, true );
         $translation_array = array(
             'cookiebar_content' => __( "This website makes use of cookies to enhance browsing experience and provide additional functionality. None of this data can or will be used to identify or contact you.", 'minium' ),
             'cookiebar_learn_more' => __( "Learn more", 'minium'),
             'cookiebar_learn_more_link' => get_theme_mod('cookies_bar_learn_more_link'),
             'cookiebar_close' => __( "Close", 'minium')
         );
-        wp_localize_script( 'app', 'minium_app', $translation_array );
-        wp_enqueue_script( 'app' );
+        wp_localize_script( 'cookies', 'minium_app', $translation_array );
+        wp_enqueue_script( 'cookies' );
     }
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -106,21 +106,12 @@ function minium_scripts() {
 
     if ( is_singular() ) {
         wp_enqueue_style( 'highlight', "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/tomorrow-night.min.css" );
-        wp_enqueue_script( 'highlight', "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js" );
+        wp_enqueue_script( 'highlight', "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js", [], false, true );
+        wp_enqueue_script( 'app', get_template_directory_uri() . "/assets/js/app.min.js", [], false, true );
     }
 }
 
 add_action( 'wp_enqueue_scripts', 'minium_scripts' );
-
-function highlight() {
-    if ( is_singular() ) :
-        ?>
-        <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
-        <?php
-    endif;
-}
-
-add_action( 'wp_footer', 'highlight' );
 
 require get_template_directory() . '/inc/template-tags.php';
 
