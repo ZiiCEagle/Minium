@@ -159,7 +159,8 @@
   }
 }
 
-.comment-form {
+.comment-form,
+.contact-form {
   a {
     color: #345;
   }
@@ -177,7 +178,7 @@
 
   textarea,
   input {
-    width: 100%;
+    width: 100%!important;
     max-width: 100%;
     -webkit-appearance: none;
     padding: $gutter;
@@ -195,7 +196,8 @@
   }
 }
 
-.form-submit {
+.form-submit,
+.contact-submit {
   input[type=submit] {
     margin-top: 0;
     background-color: #fff;
