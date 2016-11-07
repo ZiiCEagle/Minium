@@ -10,22 +10,26 @@
 
     <?php $count = 0; ?>
 
-    <?php /* Start the Loop */ ?>
-    <?php while ( have_posts() ) : the_post(); ?>
+    <div id="grid-container" class="grid-container">
 
-        <?php if ( $count % 3 == 1 ) : ?>
-            <div class="row">
-        <?php endif; ?>
+        <?php /* Start the Loop */ ?>
+        <?php while ( have_posts() ) : the_post(); ?>
 
-        <?php get_template_part( 'templates/content', get_post_format() ); ?>
+            <?php if ( $count % 3 == 1 ) : ?>
+                <div class="row">
+            <?php endif; ?>
 
-        <?php if ( $count % 3 == 2 || $count + 1 == count( $posts ) ) : ?>
-            </div>
-        <?php endif; ?>
+            <?php get_template_part( 'templates/content', get_post_format() ); ?>
 
-        <?php $count ++; ?>
+            <?php if ( $count % 3 == 2 || $count + 1 == count( $posts ) ) : ?>
+                </div>
+            <?php endif; ?>
 
-    <?php endwhile; ?>
+            <?php $count ++; ?>
+
+        <?php endwhile; ?>
+
+    </div>
 
     <?php minium_paging_nav(); ?>
 
