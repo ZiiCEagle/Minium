@@ -93,8 +93,45 @@
   }
 }
 
+.infinite-scroll {
+  .paging-navigation {
+    display: none;
+  }
+}
+
 .paging-navigation {
   padding: 0 $gutter;
+}
+
+span.infinite-loader {
+  display: none;
+}
+
+#infinite-handle {
+  span {
+    padding: 0;
+    background-color: initial;
+
+    button  {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      color: $color-brand-secondary;
+      border: 2px solid $color-brand-tertiary;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      display: block;
+      padding: 10px!important;
+      margin: 10px 0!important;
+      color: #fff;
+      cursor: pointer;
+      background-color: $color-brand-primary;
+      border: 2px solid $color-brand-primary;
+    }
+  }
 }
 
 @include bp(small) {
