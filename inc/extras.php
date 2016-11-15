@@ -73,7 +73,7 @@ add_filter( 'wp_title', 'minium_wp_title', 10, 2 );
 /**
  * Generate summary for posts
  */
-if ( ! function_exists( 'add_anchor_to_title' ) ) {
+if ( ! function_exists( 'replace_ca' ) ) {
     function replace_ca( $matches ) {
         array_shift($matches);
         $lvl = $matches[0];
