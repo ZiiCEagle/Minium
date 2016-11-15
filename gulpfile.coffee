@@ -81,7 +81,7 @@ gulp.task "bower", ->
 # Watch task
 gulp.task "watch", [ "default" ], ->
   gulp.watch paths.sass + "**", [ "styles" ]
-  gulp.watch paths.js + "*.coffee", [ "scripts" ]
+  gulp.watch paths.js + "*.coffee", [ "coffee" ]
 
 # Dafault task
 gulp.task "default", [ "bower", "styles" ], ->
