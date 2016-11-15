@@ -107,6 +107,7 @@ function minium_scripts() {
     if ( is_singular() ) {
         wp_enqueue_style( 'highlight', "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/tomorrow-night.min.css" );
         wp_enqueue_script( 'highlight', "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js", [], false, true );
+        wp_enqueue_script( 'jump', "//cdnjs.cloudflare.com/ajax/libs/jump.js/1.0.1/jump.min.js", [], false, true );
         wp_enqueue_script( 'app', get_template_directory_uri() . "/assets/js/app.min.js", [], false, true );
     }
 }
