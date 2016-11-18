@@ -45,7 +45,7 @@ if ( ! function_exists( 'primary_menu' ) ) :
 
         if ( has_nav_menu( 'primary' ) ) : ?>
 
-            <nav class="main-navigation" aria-label="<?php esc_attr_e( 'Footer Primary Menu', 'minium' ); ?>">
+            <nav class="main-navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'minium' ); ?>">
                 <?php
                     wp_nav_menu( array(
                         'theme_location' => 'primary',
@@ -64,11 +64,11 @@ if ( ! function_exists( 'social_menu' ) ) :
 
         if ( has_nav_menu( 'social' ) ) : ?>
 
-            <nav class="social-navigation" aria-label="<?php esc_attr_e( 'Social Links Menu', 'minium' ); ?>">
+            <nav class="social-navigation" aria-label="<?php esc_attr_e( 'Social Menu', 'minium' ); ?>">
                 <?php
                 wp_nav_menu( array(
                     'theme_location' => 'social',
-                    'menu_class'     => 'social-links-menu',
+                    'menu_class'     => 'social-menu',
                     'depth'          => 1,
                     'link_before'    => '<span class="screen-reader-text">',
                     'link_after'     => '</span>',
@@ -94,7 +94,7 @@ if ( ! function_exists( 'author_social_menu' ) ) :
 
         ?>
 
-        <ul class="social-links-menu">
+        <ul class="author-links-list">
             <?php if ( ! empty( $twitter ) ) : ?>
                 <li class="menu-item">
                     <a href="https://twitter.com/<?php echo $twitter; ?>" target="_blank"></a>
