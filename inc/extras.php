@@ -101,11 +101,13 @@ if ( ! function_exists( 'summary' ) ) {
     function summary( $atts = [] ) {
         global $post;
         $atts = array_change_key_case( (array)$atts, CASE_LOWER );
-        $atts = shortcode_atts( [ 'deep' => 1 ], $atts );
+        $atts = shortcode_atts( [ 'deep' => 1, 'numbering' => 'tiered' ], $atts );
         $deep = $atts['deep'];
+        $numbering = $atts['numbering'];
         $titles = [];
+        $class = ($numbering == 'tiered') ? 'tiered' : '';
 
-        $summary = '<nav class="article-summary"><ol>';
+        $summary = "<nav class='article-summary {$class}'><ol>";
 
         $pattern = "/<h([2-4]).*?>(.*?)<\/h[2-4]>/i";
         preg_match_all( $pattern, $post->post_content, $matches );
