@@ -131,14 +131,14 @@ if ( ! function_exists( 'summary' ) ) {
                 $summary .= "<li>{$link}</li>";
             }
 
-            if ( $lvl < $next_lvl ) {
+            if ( $next_lvl > $lvl) {
                 $summary .= "<li>{$link}";
 
                 for ( $i = 0; $i < $next_lvl - $lvl; $i++ ) {
                     $summary .= '<ol>';
                 }
             }
-            else {
+            elseif ($next_lvl < $lvl && $next_lvl != null) {
                 for ( $i = 0; $i < $lvl - $next_lvl; $i++ ) {
                     $summary .= '</ol></li>';
                 }
