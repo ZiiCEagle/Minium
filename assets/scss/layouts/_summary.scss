@@ -1,0 +1,14 @@
+.article-summary.tiered {
+  ol {
+    padding-left: ($gutter * 2);
+    counter-reset: item;
+  }
+  li {
+    display: block;
+
+    &:before {
+      content: counters(item, ".") ". ";
+      counter-increment: item;
+    }
+  }
+}

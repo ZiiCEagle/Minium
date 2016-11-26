@@ -101,11 +101,13 @@ if ( ! function_exists( 'summary' ) ) {
     function summary( $atts = [] ) {
         global $post;
         $atts = array_change_key_case( (array)$atts, CASE_LOWER );
-        $atts = shortcode_atts( [ 'deep' => 1 ], $atts );
+        $atts = shortcode_atts( [ 'deep' => 1, 'numbering' => 'tiered' ], $atts );
         $deep = $atts['deep'];
+        $numbering = $atts['numbering'];
         $titles = [];
+        $class = ($numbering == 'tiered') ? 'tiered' : '';
 
-        $summary = '<nav class="article-summary"><ol>';
+        $summary = "<nav class='article-summary {$class}'><ol>";
 
         $pattern = "/<h([2-4]).*?>(.*?)<\/h[2-4]>/i";
         preg_match_all( $pattern, $post->post_content, $matches );
@@ -118,9 +120,9 @@ if ( ! function_exists( 'summary' ) ) {
             $titles[] = [ $value => $matches[ 1 ][ $key ] ];
         }
 
-        foreach ($titles as $title) {
-            $lvl = key($title);
-            $next_lvl = key( next( $titles ) );
+        foreach ($titles as $k => $title) {
+            $lvl = key( $title );
+            $next_lvl = key( $titles[ $k + 1 ] );
             $title_content = $title[ $lvl ];
             $sanitize_title = sanitize_title( $title_content );
             $link = "<a href='#{$sanitize_title}'>{$title_content}</a>";
@@ -129,14 +131,14 @@ if ( ! function_exists( 'summary' ) ) {
                 $summary .= "<li>{$link}</li>";
             }
 
-            if ( $lvl < $next_lvl ) {
+            if ( $next_lvl > $lvl) {
                 $summary .= "<li>{$link}";
 
                 for ( $i = 0; $i < $next_lvl - $lvl; $i++ ) {
                     $summary .= '<ol>';
                 }
             }
-            else {
+            elseif ($next_lvl < $lvl && $next_lvl != null) {
                 for ( $i = 0; $i < $lvl - $next_lvl; $i++ ) {
                     $summary .= '</ol></li>';
                 }
