@@ -120,9 +120,9 @@ if ( ! function_exists( 'summary' ) ) {
             $titles[] = [ $value => $matches[ 1 ][ $key ] ];
         }
 
-        foreach ($titles as $title) {
-            $lvl = key($title);
-            $next_lvl = key( next( $titles ) );
+        foreach ($titles as $k => $title) {
+            $lvl = key( $title );
+            $next_lvl = key( $titles[ $k + 1 ] );
             $title_content = $title[ $lvl ];
             $sanitize_title = sanitize_title( $title_content );
             $link = "<a href='#{$sanitize_title}'>{$title_content}</a>";
