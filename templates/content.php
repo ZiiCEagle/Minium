@@ -39,7 +39,10 @@
 
             <div class="content-summary">
                 <?php the_author_posts_link(); ?>
-                <span class="content-date"><?php the_date(); ?>
+                <span class="content-date">
+                    <time datetime="<?php the_time( 'c' ); ?>" title="<?php printf( __('%1$s at %2$s'), get_the_date(), get_the_time() ); ?>">
+                        <?php the_date(); ?>
+                    </time>
                     <i class="fa fa-circle bull"></i>
                     <a href="<?php the_permalink(); ?>#comments">
                         <i class="fa fa-comments"></i><?php comments_number( '0', '1', '%' ); ?>

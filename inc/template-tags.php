@@ -218,7 +218,7 @@ if ( ! function_exists( 'minium_comment' ) ) :
                                 <?php echo get_comment_author_link(); ?>
                                 <div class="comment-metadata">
                                     <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">
-                                        <time datetime="<?php comment_time( 'c' ); ?>">
+                                        <time datetime="<?php comment_time( 'c' ); ?>" title="<?php printf( __('%1$s at %2$s'), get_comment_date(), get_comment_time() ); ?>">
                                             <?php printf( __( '%1s ago', 'minium' ), human_time_diff( get_comment_time( 'U' ) ) ); ?>
                                         </time>
                                     </a>
