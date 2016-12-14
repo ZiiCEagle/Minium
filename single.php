@@ -24,7 +24,9 @@ get_header(); ?>
                 <div class="site-summary">
                     <?php echo the_author_posts_link(); ?>
                     <span class="entry-date">
-                        <?php printf( __( '%1s ago', 'minium' ), human_time_diff( get_the_time( 'U' ) ) ); ?>
+                        <time datetime="<?php the_time( 'c' ); ?>" title="<?php printf( __('%1$s at %2$s'), get_the_date(), get_the_time() ); ?>">
+                            <?php printf( __( '%1s ago', 'minium' ), human_time_diff( get_the_time( 'U' ) ) ); ?>
+                        </time>
                         <i class="fa fa-circle bull"></i>
                         <a class="site-comments" href="#comments">
                             <i class="fa fa-comments"></i><?php comments_number( '0', '1', '%' ); ?>
