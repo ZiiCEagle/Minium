@@ -2,9 +2,16 @@
 /**
  * @package Minium
  */
+
+    $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ) );
+    $classes = ['content-post'];
+
+    if ( $thumbnail_src == '' || !has_post_thumbnail() ) {
+        $classes[] = 'has-not-thumbnail';
+    }
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('content-post'); ?> style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
+<article id="post-<?php the_ID(); ?>" <?php post_class($classes); ?> style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
 
     <a href="<?php the_permalink(); ?>" class="content-background"></a>
 

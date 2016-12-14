@@ -9,6 +9,16 @@
   background-size: cover;
 }
 
+.content-post {
+  border: 1px solid $color-brand-tertiary;
+
+  &:hover {
+    .content-background {
+      background-color: rgba(0, 0, 0, .2);
+    }
+  }
+}
+
 .content-header {
   position: absolute;
   bottom: 5px;
@@ -78,10 +88,8 @@
 .content-title {
   margin-top: 0;
   a {
-    @include color-link() {
-      display: block;
-      color: #fff;
-    }
+    display: block;
+    color: #fff;
   }
 
   .fa-bookmark {
@@ -98,16 +106,30 @@
   bottom: 0;
   left: 0;
   display: block;
-  background-color: rgba(0,0,0,.3);
   transition: background-color .2s;
-
-  &:hover {
-    background-color: rgba(0,0,0,.5);
-  }
 }
 
 .bull {
   margin: 0 ($gutter / 2);
   font-size: .5em;
   vertical-align: middle;
+}
+
+.has-not-thumbnail {
+  .content-title {
+    a {
+      color: #345;
+    }
+  }
+
+  .content-meta {
+    a {
+      @include color-link() {
+        color: #345;
+      }
+    }
+  }
+  .content-date {
+    color: #345;
+  }
 }
