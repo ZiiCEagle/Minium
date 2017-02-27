@@ -11,7 +11,7 @@
     }
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class($classes); ?> style="background-image: url('<?php the_post_thumbnail_url(); ?>')">
+<article id="post-<?php the_ID(); ?>" <?php post_class($classes); ?> style="background-image: url('<?php the_post_thumbnail_url("large"); ?>')">
 
     <a href="<?php the_permalink(); ?>" class="content-background"></a>
 
