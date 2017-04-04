@@ -31,11 +31,11 @@ function minium_register_theme_customizer( $wp_customize ) {
      ) );
 
     $wp_customize->add_control(
-    'display_cookies_bar',
-    array(
-        'section'   => 'title_tagline',
-        'label'     => __( 'Display Cookies bar', 'minium' ),
-        'type'      => 'checkbox'
+        'display_cookies_bar',
+        array(
+            'section'   => 'title_tagline',
+            'label'     => __( 'Display Cookies bar', 'minium' ),
+            'type'      => 'checkbox'
          )
      );
 
@@ -46,6 +46,23 @@ function minium_register_theme_customizer( $wp_customize ) {
             'label' => __( 'The link for the call to learn more button', 'minium' ),
             'section' => 'title_tagline',
             'type' => 'text',
+        )
+    );
+
+    $wp_customize->add_setting( 'minium_layout_type', array(
+        'default' => 'grid'
+    ) );
+
+    $wp_customize->add_control(
+        'minium_layout_type',
+        array(
+            'label' => __( 'Layout Type', 'minium' ),
+            'section' => 'title_tagline',
+            'type' => 'radio',
+            'choices' => array(
+                'fullwidth' => 'Full Width',
+                'grid' => 'Grid'
+            ),
         )
     );
 }
