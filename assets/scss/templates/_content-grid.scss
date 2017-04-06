@@ -1,0 +1,142 @@
+.grid-container {
+  .post,
+  .page {
+    position: relative;
+    min-height: 300px;
+    padding: 5px;
+    margin-bottom: $gutter;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .content-post {
+    border: 1px solid $color-brand-tertiary;
+
+    &:hover {
+      .content-background {
+        background-color: rgba(0, 0, 0, .4);
+      }
+
+      &.has-not-thumbnail {
+        .content-background {
+          background-color: rgba(0, 0, 0, .2);
+        }
+      }
+    }
+  }
+
+  .content-header {
+    position: absolute;
+    bottom: 5px;
+    left: $gutter;
+  }
+
+  .content-meta {
+    display: flex;
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    a {
+      margin-right: $gutter;
+      vertical-align: top;
+
+      @include color-link() {
+        color: #fff;
+      }
+    }
+  }
+
+  .content-summary {
+    display: flex;
+    font-size: .8em;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .content-date {
+    color: #fff;
+    .fa-comments {
+      margin-right: ($gutter / 2);
+    }
+  }
+
+  .content-post {
+    .cat-links {
+      position: absolute;
+    }
+
+    .post-categories {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        display: inline-block;
+        margin: ($gutter / 2);
+        background-color: #000;
+        a {
+          display: block;
+          padding: 10px;
+
+          @include color-link() {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .content-title {
+    margin-top: 0;
+    a {
+      display: block;
+      color: #fff;
+    }
+
+    .fa-bookmark {
+      margin-right: ($gutter / 2);
+      font-size: 16px;
+      vertical-align: middle;
+    }
+  }
+
+  .content-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, .2);
+    transition: background-color .2s;
+  }
+
+  .has-not-thumbnail {
+    .content-background {
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .content-title {
+      a {
+        color: #345;
+      }
+    }
+
+    .content-meta {
+      a {
+        @include color-link() {
+          color: #345;
+        }
+      }
+    }
+    .content-date {
+      color: #345;
+    }
+  }
+}

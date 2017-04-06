@@ -30,6 +30,12 @@
   color: $color-brand-secondary;
 }
 
+.bull {
+  margin: 0 ($gutter / 2);
+  font-size: .5em;
+  vertical-align: middle;
+}
+
 @include bp(medium) {
   .site {
     width: map-get($breakpoints, medium);
