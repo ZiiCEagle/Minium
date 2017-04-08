@@ -1,7 +1,11 @@
 # Worpdress-Minium-Theme
 Un thème minimaliste pour Wordpress.
 
-# Installation
+## Fonctionnalités
+
+Le thème supporte 2 layouts differents que vous pouvez modifier à la volée dans le menu de personnalisation du thème.
+
+## Installation
 
 Le thème est prêt à être utilisé, vous pouvez dès maintenant le télécharger et l'installer sur Wordpress.
 
@@ -13,14 +17,14 @@ Les icônes sont actuellement disponible pour : Twitter, Codepen, Dribbble, Drop
 
 Il est par ailleurs très conseillé d'utiliser un nombre pair d'articles par page, car le thème ne gère pas encore très correctement le cas inverse. Il y aura, simplement, un espace vide à la fin dans le cas d'un nombre impair.
 
-# Personnalisation
+## Personnalisation
 
 Le thème est également fourni avec le code source du style.
 
-Pour installer les dépendances, npm et bower doivent être installé sur votre poste et vous devrez utiliser la commande :
+Pour installer les dépendances, yarn et bower doivent être installé sur votre poste et vous devrez utiliser la commande :
 
 ```
-$ npm install
+$ yarn install
 ```
 
 Une fois vos changement effectués dans le dossier /assets/scss vous pourrez les compiler avec la commande :
@@ -31,6 +35,6 @@ $ gulp styles
 
 Le code sera alors parsé, minifié et autoprefixer, inutile donc de le faire à la main.
 
-# Suggestions
+## Suggestions
 
 N'hésitez pas à me faire des retours d'améliorations pour ce thème que je rajouterais au besoin.
