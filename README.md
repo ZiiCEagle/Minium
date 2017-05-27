@@ -1,6 +1,12 @@
 # Worpdress-Minium-Theme
 Un thème minimaliste pour Wordpress.
 
+![Thème en grille](screenshot.png)
+*Thème en grille*
+
+![Thème en ligne](screenshot-fullwidth.png)
+*Thème en ligne*
+
 ## Fonctionnalités
 
 Le thème supporte 2 layouts differents que vous pouvez modifier à la volée dans le menu de personnalisation du thème.
